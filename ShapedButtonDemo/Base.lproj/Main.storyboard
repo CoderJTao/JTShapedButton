@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShapedButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTf-aV-y6H">
+                                <rect key="frame" x="60" y="220" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-av-Sop" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="60" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="center"/>
+                                        <connections>
+                                            <action selector="centerClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJz-uD-BrS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8d-Xe-FMs" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="leftUp"/>
+                                        <connections>
+                                            <action selector="leftUpClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUF-K9-qCg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lh-M8-Yyx" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="leftDown"/>
+                                        <connections>
+                                            <action selector="leftDownClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBE-52-WeK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JX-zP-JYy" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="rightUp"/>
+                                        <connections>
+                                            <action selector="rightUpClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8C-hT-hTX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-cr-prZ" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="100" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="rightDown"/>
+                                        <connections>
+                                            <action selector="rightDownClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDk-pU-39g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66531611083880593" green="0.8378011039827673" blue="1" alpha="0.96440360915492962" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dqI-YJ-QxB"/>
+                                    <constraint firstAttribute="height" constant="200" id="faN-YK-j4c"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal Button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-QK-HSW">
+                                <rect key="frame" x="10" y="30" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XdI-CV-FSM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JTShapedButton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiz-Tt-9q1">
+                                <rect key="frame" x="165" y="30" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vSi-j4-T9E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USO-14-nXM">
+                                <rect key="frame" x="41.5" y="68" width="82" height="62"/>
+                                <state key="normal" image="star"/>
+                                <connections>
+                                    <action selector="normalBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRb-oT-w3I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0k-7z-8JB" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="197" y="68" width="81.5" height="62"/>
+                                <state key="normal" image="star"/>
+                                <connections>
+                                    <action selector="shapedBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtf-yo-Krk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KTf-aV-y6H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ka-xI-qTI"/>
+                            <constraint firstItem="iTY-QK-HSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="AGV-xG-DkQ"/>
+                            <constraint firstItem="aiz-Tt-9q1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="EDD-mD-yV5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aiz-Tt-9q1" secondAttribute="trailing" constant="10" id="Eyd-TV-U1P"/>
+                            <constraint firstItem="Q0k-7z-8JB" firstAttribute="top" secondItem="aiz-Tt-9q1" secondAttribute="bottom" constant="8" id="KV7-Y1-lYZ"/>
+                            <constraint firstItem="iTY-QK-HSW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="NZX-ks-K9c"/>
+                            <constraint firstItem="Q0k-7z-8JB" firstAttribute="centerX" secondItem="aiz-Tt-9q1" secondAttribute="centerX" id="RZR-Qy-8gG"/>
+                            <constraint firstItem="aiz-Tt-9q1" firstAttribute="width" secondItem="iTY-QK-HSW" secondAttribute="width" id="kdm-xz-Oho"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KTf-aV-y6H" secondAttribute="bottom" priority="750" constant="60" id="n6e-7F-MOR"/>
+                            <constraint firstItem="USO-14-nXM" firstAttribute="centerX" secondItem="iTY-QK-HSW" secondAttribute="centerX" id="vq6-3B-31K"/>
+                            <constraint firstItem="USO-14-nXM" firstAttribute="top" secondItem="iTY-QK-HSW" secondAttribute="bottom" constant="8" id="ycb-1l-Lnr"/>
+                            <constraint firstItem="aiz-Tt-9q1" firstAttribute="leading" secondItem="iTY-QK-HSW" secondAttribute="trailing" constant="10" id="yuj-Mp-SG6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KTf-aV-y6H" secondAttribute="bottom" constant="10" id="zg3-P8-xOZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.375" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="center" width="80" height="80"/>
+        <image name="leftDown" width="100" height="100"/>
+        <image name="leftUp" width="100" height="100"/>
+        <image name="rightDown" width="100" height="100"/>
+        <image name="rightUp" width="100" height="100"/>
+        <image name="star" width="81.5" height="62"/>
+    </resources>
+</document>
