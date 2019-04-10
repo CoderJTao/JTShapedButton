@@ -1,6 +1,6 @@
 ## 需求
 
-利用图片，实现一个如图的按钮组。
+实现一个如图的按钮组。
 
 <div align="center">
 <img src="https://github.com/CoderJTao/JTShapedButton/blob/master/demand.png" height="300" width="300" >

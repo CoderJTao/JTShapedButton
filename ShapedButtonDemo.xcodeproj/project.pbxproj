@@ -13,6 +13,8 @@
 		6C5E9E61225B465E00822F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5E9E60225B465E00822F0A /* Assets.xcassets */; };
 		6C5E9E64225B465E00822F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5E9E62225B465E00822F0A /* LaunchScreen.storyboard */; };
 		6C5E9E6D225B468900822F0A /* JTShapedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E9E6C225B468900822F0A /* JTShapedButton.swift */; };
+		6C81D16F225DD48D00B517C9 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C81D16E225DD48D00B517C9 /* ViewControllerTwo.swift */; };
+		6C81D171225DD4D500B517C9 /* IrregularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C81D170225DD4D400B517C9 /* IrregularButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6C5E9E63225B465E00822F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C5E9E65225B465E00822F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C5E9E6C225B468900822F0A /* JTShapedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTShapedButton.swift; sourceTree = "<group>"; };
+		6C81D16E225DD48D00B517C9 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		6C81D170225DD4D400B517C9 /* IrregularButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrregularButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			children = (
 				6C5E9E59225B465C00822F0A /* AppDelegate.swift */,
 				6C5E9E5B225B465C00822F0A /* ViewController.swift */,
+				6C81D16E225DD48D00B517C9 /* ViewControllerTwo.swift */,
 				6C5E9E5D225B465C00822F0A /* Main.storyboard */,
 				6C5E9E60225B465E00822F0A /* Assets.xcassets */,
 				6C5E9E62225B465E00822F0A /* LaunchScreen.storyboard */,
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				6C5E9E6C225B468900822F0A /* JTShapedButton.swift */,
+				6C81D170225DD4D400B517C9 /* IrregularButton.swift */,
 			);
 			path = JTShapedButton;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				6C5E9E5C225B465C00822F0A /* ViewController.swift in Sources */,
 				6C5E9E6D225B468900822F0A /* JTShapedButton.swift in Sources */,
 				6C5E9E5A225B465C00822F0A /* AppDelegate.swift in Sources */,
+				6C81D16F225DD48D00B517C9 /* ViewControllerTwo.swift in Sources */,
+				6C81D171225DD4D500B517C9 /* IrregularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
