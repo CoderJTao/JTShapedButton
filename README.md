@@ -22,3 +22,12 @@
 ## 实现效果
 
 ![](https://github.com/CoderJTao/JTShapedButton/blob/master/demo.gif)
+
+
+### 扩展
+
+关于不规则按钮的文章，可以在我的掘金文章中看到。
+
+[iOS 不规则Button点击（一）](https://juejin.im/post/5caaeabf5188256347611818)
+
+[iOS 不规则Button点击（二）](https://juejin.im/post/5cad816e6fb9a068b7489e62)
