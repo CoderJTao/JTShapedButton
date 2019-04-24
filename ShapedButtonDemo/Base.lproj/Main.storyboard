@@ -40,7 +40,7 @@
                                 <rect key="frame" x="87.5" y="338" width="200" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-av-Sop" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="60" width="80" height="80"/>
+                                        <rect key="frame" x="80" y="80" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="center"/>
                                         <connections>
@@ -105,15 +105,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USO-14-nXM">
-                                <rect key="frame" x="55.5" y="68" width="82" height="62"/>
+                                <rect key="frame" x="55.5" y="68" width="81.5" height="62"/>
                                 <state key="normal" image="star"/>
                                 <connections>
                                     <action selector="normalBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRb-oT-w3I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0k-7z-8JB" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="238" y="68" width="82" height="62"/>
-                                <state key="normal" backgroundImage="star"/>
+                                <rect key="frame" x="239.5" y="68" width="79" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="FsW-aj-4md"/>
+                                    <constraint firstAttribute="height" constant="67" id="NCh-59-iIL"/>
+                                </constraints>
+                                <state key="normal" image="star"/>
                                 <connections>
                                     <action selector="shapedBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtf-yo-Krk"/>
                                 </connections>
