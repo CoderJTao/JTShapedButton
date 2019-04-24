@@ -61,7 +61,13 @@ extension JTShapedButton {
         
         var image_point = CGPoint(x: point.x - contentView.frame.origin.x, y: point.y - contentView.frame.origin.y)
         
-        image_point = image_point.applying(contentView.viewToImageTransform())
+        if contentImage == btn_backgroundImage {
+            let imageV = UIImageView(frame: self.bounds)
+            imageV.image = contentImage
+            image_point = image_point.applying(imageV.viewToImageTransform())
+        } else {
+            image_point = image_point.applying(contentView.viewToImageTransform())
+        }
         
         let pixelColor = contentImage.color(at: image_point)
         

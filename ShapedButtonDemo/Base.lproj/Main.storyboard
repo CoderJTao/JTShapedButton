@@ -95,7 +95,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JTShapedButton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiz-Tt-9q1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JTShapedButton(Image)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiz-Tt-9q1">
                                 <rect key="frame" x="192.5" y="30" width="172.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vSi-j4-T9E"/>
@@ -112,12 +112,26 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0k-7z-8JB" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="238" y="68" width="81.5" height="62"/>
-                                <state key="normal" image="star"/>
+                                <rect key="frame" x="238" y="68" width="82" height="62"/>
+                                <state key="normal" backgroundImage="star"/>
                                 <connections>
                                     <action selector="shapedBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtf-yo-Krk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49v-Bj-Zhi" customClass="JTShapedButton" customModule="ShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="147" y="188" width="81.5" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81.5" id="Blg-Gd-Dav"/>
+                                    <constraint firstAttribute="height" constant="127" id="llD-wQ-Myd"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="star"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JTShapedButton(Background)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM6-PI-uSd">
+                                <rect key="frame" x="83" y="150" width="209" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -125,11 +139,15 @@
                             <constraint firstItem="iTY-QK-HSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="AGV-xG-DkQ"/>
                             <constraint firstItem="aiz-Tt-9q1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="EDD-mD-yV5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aiz-Tt-9q1" secondAttribute="trailing" constant="10" id="Eyd-TV-U1P"/>
+                            <constraint firstItem="lM6-PI-uSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjm-0C-i4x"/>
                             <constraint firstItem="Q0k-7z-8JB" firstAttribute="top" secondItem="aiz-Tt-9q1" secondAttribute="bottom" constant="8" id="KV7-Y1-lYZ"/>
+                            <constraint firstItem="49v-Bj-Zhi" firstAttribute="top" secondItem="lM6-PI-uSd" secondAttribute="bottom" constant="20" id="MVR-Nc-wge"/>
                             <constraint firstItem="iTY-QK-HSW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="NZX-ks-K9c"/>
                             <constraint firstItem="Q0k-7z-8JB" firstAttribute="centerX" secondItem="aiz-Tt-9q1" secondAttribute="centerX" id="RZR-Qy-8gG"/>
+                            <constraint firstItem="49v-Bj-Zhi" firstAttribute="centerX" secondItem="lM6-PI-uSd" secondAttribute="centerX" id="ZPK-wt-2oV"/>
                             <constraint firstItem="aiz-Tt-9q1" firstAttribute="width" secondItem="iTY-QK-HSW" secondAttribute="width" id="kdm-xz-Oho"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KTf-aV-y6H" secondAttribute="bottom" priority="750" constant="80" id="n6e-7F-MOR"/>
+                            <constraint firstItem="lM6-PI-uSd" firstAttribute="top" secondItem="USO-14-nXM" secondAttribute="bottom" constant="20" id="so1-KU-i7k"/>
                             <constraint firstItem="USO-14-nXM" firstAttribute="centerX" secondItem="iTY-QK-HSW" secondAttribute="centerX" id="vq6-3B-31K"/>
                             <constraint firstItem="USO-14-nXM" firstAttribute="top" secondItem="iTY-QK-HSW" secondAttribute="bottom" constant="8" id="ycb-1l-Lnr"/>
                             <constraint firstItem="aiz-Tt-9q1" firstAttribute="leading" secondItem="iTY-QK-HSW" secondAttribute="trailing" constant="10" id="yuj-Mp-SG6"/>
@@ -141,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="-353"/>
+            <point key="canvasLocation" x="680.79999999999995" y="-353.07346326836586"/>
         </scene>
         <!--IrregularButton-->
         <scene sceneID="tVc-JB-HQo">
